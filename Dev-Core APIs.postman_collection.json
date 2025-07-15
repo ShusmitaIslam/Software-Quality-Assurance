@@ -1,0 +1,771 @@
+{
+	"info": {
+		"_postman_id": "9f0d5343-a3c0-4387-9701-9bd475f6d5c5",
+		"name": "Dev-Core APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24181766"
+	},
+	"item": [
+		{
+			"name": "step_1",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_front",
+							"type": "file",
+							"src": "/D:/NID/hF.png"
+						},
+						{
+							"key": "id_back",
+							"type": "file",
+							"src": "/D:/NID/hB.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customer-registration/?step=1&crop=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer-registration",
+						""
+					],
+					"query": [
+						{
+							"key": "step",
+							"value": "1"
+						},
+						{
+							"key": "crop",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "step_2",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nid_no",
+							"value": "9152857042",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1997/10/20",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01112345008",
+							"type": "text"
+						},
+						{
+							"key": "applicant_name_ben",
+							"value": "মোঃ হারুন উর রশিদ",
+							"type": "text"
+						},
+						{
+							"key": "applicant_name_eng",
+							"value": "MD HARUN UR RASHID",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "father_name",
+							"value": "হাজী মোঃ ইউসুফ বীরমুক্তি যোদ্ধা",
+							"type": "text"
+						},
+						{
+							"key": "mother_name",
+							"value": "হাজী নরে আজিজা",
+							"type": "text"
+						},
+						{
+							"key": "pres_address",
+							"value": "বাসা/হোল্ডিং: ৩৩/১৮, গ্রাম/রাস্তা: ৩৩/১৮  ঈশা খাঁ রোড, - ডাকঘর: নারায়নগঞ্জ সদর - ১৪০০,  নারায়ণগঞ্জ সদর, নারায়ণগঞ্জ সিটি কর্পোরেশন, নারায়ণগঞ্জ",
+							"type": "text"
+						},
+						{
+							"key": "perm_address",
+							"value": "বাসা/হোল্ডিং: ৩৩/১৮, গ্রাম/রাস্তা: ৩৩/১৮  ঈশা খাঁ রোড, - ডাকঘর: নারায়নগঞ্জ সদর - ১৪০০,  নারায়ণগঞ্জ সদর, নারায়ণগঞ্জ সিটি কর্পোরেশন, নারায়ণগঞ্জ",
+							"type": "text"
+						},
+						{
+							"key": "id_front_name",
+							"value": "/2023/06/ad4753a5ac75a579fff19654f7e8646a862a546ea3ea0849db206f06b7454f23.png",
+							"type": "text"
+						},
+						{
+							"key": "id_back_name",
+							"value": "/2023/06/4e38141a9d8182579470d98a89e22ef431758084219b85b5ca2350e367f902d0.png",
+							"type": "text"
+						},
+						{
+							"key": "spouse_name",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "profession",
+							"value": "student",
+							"type": "text"
+						},
+						{
+							"key": "nominee",
+							"value": "Fahad",
+							"type": "text"
+						},
+						{
+							"key": "nominee_relation",
+							"value": "sss",
+							"type": "text"
+						},
+						{
+							"key": "etin_number",
+							"value": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "branch_code",
+							"value": "13",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "mailing_address",
+							"value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "tax_reference",
+							"value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "applicant_photo",
+							"type": "file",
+							"src": "/D:/NID/kawsar vaia.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customer-registration/?step=2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer-registration",
+						""
+					],
+					"query": [
+						{
+							"key": "step",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_verification_status",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_uuid",
+							"value": "3TxKQjNEs9xDZm98pNQJGcmICpZmal6I",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/get-verification-status/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-verification-status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "liveliness",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "input_type",
+							"value": "video",
+							"type": "text"
+						},
+						{
+							"key": "input_file",
+							"type": "file",
+							"src": "/C:/Users/GT/Desktop/WIN_20230612_15_25_19_Pro.mp4"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/liveliness/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"liveliness",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transliteration",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fathers_name",
+							"value": "হাজী মোঃ ইউসুফ বীরমুক্তি যোদ্ধা",
+							"type": "text"
+						},
+						{
+							"key": "mothers_name",
+							"value": "হাজী নরে আজিজা",
+							"type": "text"
+						},
+						{
+							"key": "spouse_name",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "বাসা/হোল্ডিং: ৩৩/১৮, গ্রাম/রাস্তা: ৩৩/১৮  ঈশা খাঁ রোড, - ডাকঘর: নারায়নগঞ্জ সদর - ১৪০০,  নারায়ণগঞ্জ সদর, নারায়ণগঞ্জ সিটি কর্পোরেশন, নারায়ণগঞ্জ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/transliteration/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"transliteration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_bank",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "sheba-bkash",
+							"type": "text"
+						},
+						{
+							"key": "workflow_type",
+							"value": "type_b",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "verification_source",
+							"value": "ec_portal_api",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "push_callback",
+							"value": "false",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rpa_agent_count",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/app/banks/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"app",
+						"banks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_bank_user",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sheba-bkash",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "sheba123",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "bank",
+							"type": "text"
+						},
+						{
+							"key": "bank",
+							"value": "sheba-bkash",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "01829080890",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sheba_bkash@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/app/users/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"app",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_branch",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Gulshan",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Gulshan,Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "24700",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/bank/branches/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"bank",
+						"branches",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_agent_user",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "sheba-bkash",
+							"type": "text"
+						},
+						{
+							"key": "branch_code",
+							"value": "24700",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "01829080890",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "bdbl@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cbs_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cbs_username",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cbs_password",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_type",
+							"value": "agent",
+							"type": "text"
+						},
+						{
+							"key": "instance",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/bank/agents/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"bank",
+						"agents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "face-matching",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{authorization}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "img_selfie",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "img_ec",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/face-matching/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"face-matching",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
